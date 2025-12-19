@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased overflow-x-hidden transition-colors duration-300;
+  }
+  body.dark {
+    @apply bg-techBlue-dark text-white;
+  }
+}
+
+.glass-nav {
+  @apply backdrop-blur-md bg-white/75 dark:bg-techBlue-dark/80 sticky top-0 z-50;
+}
