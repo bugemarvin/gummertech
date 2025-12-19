@@ -1,54 +1,43 @@
-# Production-Ready Multi-Disciplinary Portfolio
+# GummerTech Portfolio Application
 
-## 1. Project Functionality/Overview
-This application is a professional, high-performance web portfolio built for technical multi-hyphenates (Software Engineers, DevOps, Designers, and IT Consultants). It provides a centralized hub to showcase technical expertise across various disciplines using a clean, modern aesthetic. 
+## Project Overview
+A production-ready, multi-page company portfolio for **GummerTech**, a technology consulting firm. Built with React 18, Vite, and Tailwind CSS, focusing on a deep tech-blue aesthetic and a data-driven architecture.
 
-**Key Highlights:**
-- **Multi-Page Experience:** Dedicated routes for all professional facets.
-- **Dynamic Project Gallery:** Interactive filtering based on technology stack or role.
-- **Dark Mode Native:** Full implementation of system-preference or manual toggle dark/light themes.
-- **Mobile First:** Fully responsive layout optimized for all screen sizes.
-- **Accessible Design:** High color contrast and semantic HTML structure.
-- **Vercel Ready:** Pre-configured for seamless SPA deployment with custom routing rules.
+## Core Components
+- **Static Data Layer**: All application content is stored in `src/data/siteContent.ts` to facilitate easy updates without UI modifications.
+- **Responsive Layout**: Persistent Navbar and Footer with mobile optimization.
+- **Modular Pages**: Individual views for Home, Services, Pricing, Projects, Skills, and Contact.
+- **Animated UI**: Subtle entry transitions using Framer Motion.
 
-## 2. Setup and Installation
+## Architectural Workflows
+1. **Data Injection**: Components consume objects from `siteContent.ts` using structured types.
+2. **Routing**: Managed by React Router DOM with path aliases for clean URLs.
+3. **Styling**: Utility-first CSS using a custom Tailwind theme extension for brand consistency.
+
+## Setup & Installation
 
 ### Prerequisites
-- Node.js (v18.0.0 or higher)
+- Node.js (v18+)
 - npm or yarn
 
-### Steps
-1. **Install dependencies:**
+### Local Development
+1. Clone the repository.
+2. Install dependencies:
    ```bash
    npm install
    ```
-2. **Run Development Server:**
+3. Start the development server:
    ```bash
    npm run dev
    ```
-3. **Production Build:**
+
+### Production Build
+1. Build the project:
    ```bash
    npm run build
    ```
+2. The output will be in the `dist/` folder, ready for deployment.
 
-## 3. Vercel Deployment
-
-This project includes a `vercel.json` file to ensure that client-side routing (React Router) works correctly after deployment. 
-
-### Quick Deploy
-1. Push this project to a **GitHub/GitLab/Bitbucket** repository.
-2. Go to [Vercel](https://vercel.com) and click **"Add New Project"**.
-3. Import your repository.
-4. Vercel will automatically detect **Vite** as the framework.
-5. Click **Deploy**.
-
-### Framework Settings
-- **Build Command:** `npm run build`
-- **Output Directory:** `dist`
-- **Install Command:** `npm install`
-
-## 4. Architecture
-- **Layout Engine:** Handles navigation persistence and global theme state.
-- **Project Filtering:** Dynamic state-managed gallery processing JSON data.
-- **Data Store:** Content is separated into `src/data/portfolioData.js` for easy updates without touching logic.
-- **UI Components:** Built with Tailwind CSS and Lucide React icons.
+### Vercel Deployment
+- The project includes a `vercel.json` for SPA routing support.
+- Connect your GitHub repository to Vercel and it will auto-detect the Vite configuration.
