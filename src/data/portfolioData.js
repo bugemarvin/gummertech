@@ -61,8 +61,20 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { category: "Frontend", items: ["React", "Next.js", "Tailwind CSS", "TypeScript"] },
-  { category: "Backend", items: ["Node.js", "PostgreSQL", "Redis", "Go"] },
-  { category: "DevOps", items: ["GitHub Actions", "Docker", "AWS", "Terraform"] },
-  { category: "IT/SysAdmin", items: ["Linux (Ubuntu/CentOS)", "Nginx", "Active Directory", "DNS"] }
+  {
+    category: "Frontend",
+    items: ["React", "Next.js", "Tailwind CSS", "TypeScript"]
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "PostgreSQL", "Redis", "Go"]
+  },
+  {
+    category: "DevOps",
+    items: ["GitHub Actions", "Docker", "AWS", "Terraform"]
+  },
+  {
+    category: "IT/SysAdmin",
+    items: ["Linux (Ubuntu/CentOS)", "Nginx", "Active Directory", "DNS"]
+  }
 ];
